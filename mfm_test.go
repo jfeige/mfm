@@ -10,7 +10,7 @@ import (
 func Test_FormatRows(t *testing.T){
 
 
-	db, err := sql.Open("mysql", "xxuser:Face99wzzn@tcp(182.92.158.94:2235)/x_000?multiStatements=true")
+	db, err := sql.Open("mysql", "admin:admin@tcp(127.0.0.1:3306)/x_000?multiStatements=true")
 	if err != nil {
 		fmt.Println(err)
 		return
