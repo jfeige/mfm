@@ -16,6 +16,7 @@ func FormatRows(rows *sql.Rows)[]map[string]interface{}{
 		pts[i] = &containers[i]
 	}
 	for rows.Next(){
+		//把结果指针放入pts，而pts本身保存的就是containers的指针地址
 		err := rows.Scan(pts...)
 		if err != nil{
 			continue
